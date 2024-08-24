@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --colorPrimario: #F3F5FC;
+    --colorSegundario: #D8DFE8;
+    --colorTerciario: #0A3871;
+    --gray1: #495057;
+    --colorBorde: #343A40;
+    --colorBlanco: #FFFF;
+    --fuenteInterna: "Inter", sans-serif;
+    --bordeRadioBoton:24px;
+    --altoBoton:57px;
+    --anchoBoton:228px;
+    --manitaMouse: pointer;
+
+}
+*{
+
+    font-weight: 200px;
+    font-size: 20px;
+    line-height: 50%;
+    line-height: 0.9;
+    padding: 0; 
+    margin: 0;
+
+}
+body{
+    background-color: var(--colorPrimario);
+
+}
+.logo__alura{
+    
+    margin: 10px 10px 10px; 
+    height: 48px;
+    width: 120px;
+
+    }
+main{
+    display: flex;/*alinear la distribucion de espacios */
+    margin-bottom: 5px;
+    margin-left: 60px; 
+}
+
+
+.texto__entrada__input{
+    border: none;
+    color: var(--colorTerciario);
+    margin: 20px 50px 5px; 
+    text-transform: lowercase;
+    margin-left: 110px;
+    background-color: var(--colorPrimario);
+}
+::placeholder{color: var(--colorTerciario);}
+.texto__entrada__input:focus{
+    outline: none
+}
+.div__informacion{
+    display: flex;
+    align-items: center;
+    
+}
+.informacion__alerta__txt{
+    color: var(--gray1);
+    font-size: 14px;
+    margin: 1px;
+
+}
+.informacion__alerta__img{
+    margin: 8px;
+    margin-left: 110px;
+}
+
+
+.div__container__botones{
+    display: flex;
+    margin-left: 110px;
+
+}
+.seccion2{
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 440px;
+    padding-right: 500px;
+    background-color:var(--colorBlanco);
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 50px -30px rgba(0, 0, 0, 0.50);
+}
+
+.div__contenedor__persona{
+    position: absolute;
+    left: 130px;
+    box-sizing: border-box;
+    
+}
+
+.imagen__persona{
+    height: 236px;
+    width: 204px;
+   
+}
+.div__contenedor__mensaje{
+    position: absolute;
+    box-sizing: border-box;
+    top: 210px;
+    left: 105px;
+    
+ }
+
+ .div__contenedor__mensaje h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--fuenteInterna);
+    text-align: center;
+    color: var(--colorBorde);
+}
+
+.div__contenedor__mensaje p{
+    font-family: var(--fuenteInterna);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--gray1);
+    padding-top: 5px;
+}
+.div__contenedor__resultado{
+    position: absolute;
+    width: 120px;
+    height: 450px;
+    box-sizing: border-box;
+    margin: 30px 40px 1px; 
+    border: #0A3871;
+}
+.div__contenedor__resultado p{
+    color: var(--gray1);
+    
+}
+
+.boton__desencriptar{
+    background: var(--colorSegundario);
+    border: 1px solid var(--colorTerciario);
+    border-radius: var(--bordeRadioBoton);
+    color: var(--colorTerciario);
+    cursor: var(--manitaMouse);
+    height: var(--altoBoton);
+    width: var(--anchoBoton);
+    margin-left: 24px;
+    margin-right: 90px;
+}
+
+.boton__encriptar{
+    background: var(--colorTerciario);
+    border: 1px solid var(--colorTerciario);
+    border-radius: var(--bordeRadioBoton);
+    color: var(--colorPrimario);
+    cursor: var(--manitaMouse);
+    height: var(--altoBoton);
+    width: var(--anchoBoton);
+}
+
+.div__contenedor__boton__copiar{
+    display: flex;
+    position: absolute;
+    top: 296px;
+   
+}
+
+.boton__copiar{
+    border: 1px solid var(--colorTerciario);
+    border-radius: var(--bordeRadioBoton);
+    color: var(--colorTerciario);
+    cursor: var(--manitaMouse);
+    height: var(--altoBoton);
+    width: var(--anchoBoton);
+    margin-left: 135px;
+    margin-top: 60px; 
+    position: absolute;
+    
+    
+}
+.ocultar{
+    display: none;
+}
+
+
+.footer {
+    background-color: var(--colorSegundario);
+    padding: 33px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+@media (max-width: 1200px) /* Propiedad para configurar las pantalla para moviles o pequiñas*/{
+    .header{
+        padding: 10%;
+    }
+
+    .principal{
+
+    flex-direction: column; /* Como todo el contenido esta en la clase prentacion entonce le decimos que se organice en columna*/
+    padding: 5%;
+}
+.seccion1{
+    width: auto;
+    height:auto;
+}
+.seccion2{
+    width: auto;
+    height: auto;
+}
+.imagen__persona{
+
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+
+}

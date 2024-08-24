@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-col">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <img class="logo__alura" src="./assets/Logo.png" alt="Logo de Alura">
+        
+        </header>
+            <main class="principal"> <!-- Esto es un comentario y será ignorado  -->
+                <section class="seccion1">
+                  <textarea class="texto__entrada__input" cols="40" rows="17" placeholder="Ingrese el texto aqui" id="texto__entrada"></textarea>
+                <div class="div__informacion">
+                    <img class="informacion__alerta__img" src="./assets/alerta.png" alt="img alerta">
+                    <h6 class="informacion__alerta__txt">Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="div__container__botones">
+                    <button class="boton__encriptar" onclick="encriptar()" >Encriptar</button>
+                    <button class="boton__desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>  
+                </section>
+
+                <section class="seccion2">
+                <div class="div__contenedor__persona">
+                    <img class="imagen__persona" src="./assets/persona.png" alt="persona img">
+                </div>
+                <div class="div__contenedor__mensaje">
+                    <h3>Nigún mensaje fue <br> encontrado</h3>
+                    <p id="outputText">Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+                </div>
+                <div class="div__contenedor__boton__copiar">
+                    <button class="boton__copiar" id="botonCopiar"  onclick="copiarTexto()" style="display: none;">Copiar</button>
+                </div>
+                <div class="div__contenedor__resultado" id="texto__salida">
+                    <p class="texto-resultado"></p>
+                </div>
+        </section>
+            </main>
+    <footer class="footer">
+            <p>Proyecto creado por Marco Mendoza gracias a Alura Latam & ONE</p>
+        </footer>
+        <script src="./app.js"></script>
+    </body>
+</html>
